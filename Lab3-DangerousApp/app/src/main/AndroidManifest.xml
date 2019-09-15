@@ -6,11 +6,12 @@
 
     <uses-sdk
             android:minSdkVersion="13"
-            android:targetSdkVersion="18"/>
+            android:targetSdkVersion="29"/>
 
     <permission
-            android:protectionLevel="dangerous"
-            android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"/>
+            android:name="course.labs.permissions.DANGEROUS_ACTIVITY"
+            android:protectionLevel="dangerous"/>
+
     <application
             android:allowBackup="true"
             android:icon="@drawable/ic_launcher"
@@ -20,12 +21,14 @@
         <activity
                 android:name=".DangerousActivity"
                 android:label="@string/app_name"
-                android:permission="course.labs.permissions.DANGEROUS_ACTIVITY_PERM">
+                android:permission="course.labs.permissions.DANGEROUS_ACTIVITY">
 
-            <intent-filter>
-                <action android:name="course.labs.permissions.DANGEROUS_ACTIVITY"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
+<!--            <intent-filter>-->
+<!--                <action android:name="course.labs.permissions.DANGEROUS_ACTIVITY"/>-->
+
+<!--                <category android:name="android.intent.category.DEFAULT"/>-->
+<!--            </intent-filter>-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
